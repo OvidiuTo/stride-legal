@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stride Support</title>
+<meta name="description" content="Help and contact for the Stride walking app.">
+<style>
+  :root {
+    --bg: #F2F2F7; --card: #FFFFFF; --label: #0B0B0C; --secondary: #5E5E64;
+    --accent: #0B7F5A; --accent-soft: rgba(11,127,90,.12); --separator: rgba(60,60,67,.18);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #000000; --card: #1C1C1E; --label: #F5F5F7; --secondary: #A1A1A6;
+      --accent: #3DDC97; --accent-soft: rgba(61,220,151,.16); --separator: rgba(84,84,88,.6);
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--label);
+    font: 17px/1.55 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 16px 64px; }
+  header { margin-bottom: 28px; }
+  .brand { display: flex; align-items: center; gap: 12px; color: var(--accent); font-weight: 700; font-size: 17px; text-decoration: none; }
+  .brand svg { width: 40px; height: 40px; border-radius: 9px; flex: none; }
+  h1 { font-size: 34px; line-height: 1.15; letter-spacing: -0.02em; margin: 20px 0 6px; }
+  .meta { color: var(--secondary); font-size: 15px; margin: 0; }
+  .summary { background: var(--accent-soft); border-radius: 22px; padding: 18px 20px; margin: 24px 0 8px; }
+  .summary p { margin: 0; }
+  section { background: var(--card); border-radius: 22px; padding: 20px 20px 6px; margin-top: 16px; }
+  h2 { font-size: 20px; margin: 0 0 10px; letter-spacing: -0.01em; }
+  h3 { font-size: 17px; margin: 18px 0 6px; }
+  p, li { color: var(--label); }
+  p { margin: 0 0 14px; }
+  ul { margin: 0 0 14px; padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  .muted { color: var(--secondary); }
+  a { color: var(--accent); }
+  table { width: 100%; border-collapse: collapse; margin: 0 0 14px; font-size: 15px; }
+  th, td { text-align: left; padding: 10px 8px 10px 0; border-bottom: 0.5px solid var(--separator); vertical-align: top; }
+  th { color: var(--secondary); font-weight: 600; font-size: 13px; text-transform: uppercase; letter-spacing: .03em; }
+  tr:last-child td { border-bottom: none; }
+  footer { margin-top: 28px; text-align: center; color: var(--secondary); font-size: 13px; }
+  footer a { margin: 0 8px; }
+  @media (max-width: 480px) { h1 { font-size: 30px; } table { font-size: 14px; } }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="brand">
+      <svg viewBox="0 0 1024 1024" aria-hidden="true">
+        <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0F4A35"/><stop offset="1" stop-color="#05231A"/></linearGradient></defs>
+        <rect width="1024" height="1024" fill="url(#g)"/>
+        <path d="M300 780 C560 800 724 724 716 604 C708 474 316 556 308 420 C300 290 520 236 724 250" fill="none" stroke="#3DDC97" stroke-width="112" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="300" cy="780" r="62" fill="#0A3628" stroke="#3DDC97" stroke-width="40"/>
+        <circle cx="724" cy="250" r="86" fill="#F7FBF8"/><circle cx="724" cy="250" r="52" fill="#3DDC97"/>
+      </svg>
+      Stride
+    </div>
+    <h1>Support</h1>
+    <p class="meta">Help with Stride for iPhone</p>
+  </header>
+
+  <div class="summary">
+    <p><strong>Need help or found a bug?</strong> Email <a href="mailto:ovidiutoma.app+stride@gmail.com">ovidiutoma.app+stride@gmail.com</a>. Please include your iPhone model, iOS version, and what happened. We usually reply within a few days.</p>
+  </div>
+
+  <section>
+    <h2>My walk isn’t recording my route</h2>
+    <p>Stride needs location access to draw your route. Go to <em>Settings › Privacy &amp; Security › Location Services › Stride</em> and choose <strong>While Using the App</strong>, with <strong>Precise Location</strong> turned on. Also check that Location Services is on.</p>
+    <p>Approximate location is too coarse to measure a walk, so Stride may ask for precise location when a walk starts.</p>
+  </section>
+
+  <section>
+    <h2>Does it keep recording with my screen locked?</h2>
+    <p>Yes. While a walk is active, Stride keeps recording with your iPhone locked and shows your progress in a Live Activity on the Lock Screen and in the Dynamic Island. Recording stops when you pause or finish the walk.</p>
+  </section>
+
+  <section>
+    <h2>My steps don’t show on Today</h2>
+    <p>Today’s steps come from Apple Health. Open the Health app, tap your profile picture, then <em>Apps › Stride</em>, and turn on the data types you want Stride to read, such as Steps. You can also connect from <em>Stride › Settings › Apple Health</em>.</p>
+  </section>
+
+  <section>
+    <h2>Walks aren’t saved to Apple Health</h2>
+    <p>In the Health app, go to <em>Apps › Stride</em> and allow Stride to write <strong>Workouts</strong>. New walks will be saved when you finish them.</p>
+  </section>
+
+  <section>
+    <h2>I’m not getting reminders or milestone notifications</h2>
+    <p>Check <em>Settings › Notifications › Stride</em> and make sure notifications are allowed. Then, in <em>Stride › Settings</em>, check that the daily reminder, distance milestones or records are turned on.</p>
+  </section>
+
+  <section>
+    <h2>Can I export or delete my data?</h2>
+    <p>Yes. In <em>Stride › Settings</em> you can export your walking history as JSON or CSV, or delete all data. Your walks are stored only on your iPhone, so deleting the app also deletes them. Walks already saved to Apple Health stay there until you remove them in the Health app.</p>
+  </section>
+
+  <section>
+    <h2>Will I lose my walks if I change phones?</h2>
+    <p>Stride stores your walks on your device. They move to a new iPhone when you restore it from an iCloud or computer backup. To keep your own copy, export your history from Settings.</p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Email <a href="mailto:ovidiutoma.app+stride@gmail.com">ovidiutoma.app+stride@gmail.com</a> for help, bug reports or feature ideas.</p>
+  </section>
+
+  <footer>
+    <a href="privacy.html">Privacy Policy</a>·<a href="terms.html">Terms of Use</a>·<a href="support.html">Support</a>
+    <p>© 2026 Ovidiu Andrei Toma</p>
+  </footer>
+</main>
+</body>
+</html>
